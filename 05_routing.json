@@ -1,0 +1,27 @@
+{
+  "routing": {
+    "rules": [
+      {
+        "inboundTag": ["redirect", "tproxy"],
+        "domain": [
+          "ext:zkeen.dat:youtube"
+        ],
+        "outboundTag": "vless-reality",
+        "type": "field"
+      },
+      {
+        "inboundTag": ["redirect", "tproxy"],
+        "ip": [
+          "ext:zkeenip.dat:google"
+        ],
+        "outboundTag": "vless-reality",
+        "type": "field"
+      },
+      {
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "direct",
+        "type": "field"
+      }
+    ]
+  }
+}
